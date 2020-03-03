@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container{
+    max-width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.up{
+    height: 20vh;
+    background-color: green;
+}
+.down{
+    height: 100vh;
+    background-color: pink;
+}
+
+.container-b{
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+    background-color: purple;
+    display: flex;
+}
+
+.left{
+    width: 30%;
+    height: 90vh;
+    background-color: red;
+}
+
+.right{
+    width: 70%;
+    height: 90vh;
+    background-color: blue;
+}
+
+.header-left{
+    width: 100%;
+    background-color: lightgrey;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-left{
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.left-two{
+    padding-right: 10px;
+}
+
+img{
+    height: 50px;
+    margin: 8px;
+}
+
+i {
+    height: 30px;
+    padding: 5px;
+}
+
+.notifiche{
+    height: 70px;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+
+}
+.bell{
+    background-color: white;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#bell{
+    margin: 10px 7.5px;
+    color: lightblue;
+    font-size: 20px;
+
+}
+
+.n-text{
+    margin-left: 10px;
+    margin-top: 18px;
+}
+
+.n-text h3 , a{
+    font-size: 14px;
+}
+
+.search{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px lightgrey;
+}
+input{
+    font-size: 20px;
+    width: 95%;
+    margin: 7.5px;
+    margin-left: 10px;
+
+}
+.container-schede{
+    overflow: scroll;
+    height: calc(100% - 110px);
+}
+
+.scheda{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: solid 1px lightgrey;
+
+
+}
+
+.txt-scheda , .orario{
+    padding: 10px;
+
+}
+
+.txt-scheda p{
+    padding-top: 5px;
+
+
+
+}
+
+.header-right{
+    width: 100%;
+    background-color: lightgrey ;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: solid 1px grey;
+}
+
+.schedabis{
+    display: flex;
+
+}
+
+.icone{
+    padding-top: 20px;
+    padding-right: 15px;
+
+
+}
+
+.scheda-grey{
+    background-color: lightgrey;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: solid 1px lightgrey;
+}
+
+.main-right{
+    height: calc(100vh - 140px) ;
+    width: 100%;
+    background-color: yellow;
+    position: relative;
+    background-image: url('https://external-preview.redd.it/rEwFriCkfAtjOb5b-23b4tGGVcuvfaBqamYNJrgxnLM.png?auto=webp&s=f3bf0b5c90e4c5fda12ff2139781c854554fd198');
+
+}
+
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+    height:70px;
+    width: 100%;
+    background-color: lightblue;
+
+}
+
+.smile{
+    width: 10%;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.smile i{
+    font-size: 25px;
+}
+
+.type{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.micro{
+    width: 10%;
+    margin-left: 50px;
+    margin-top: 15px;
+
+}
+
+.micro i{
+    font-size: 25px;
+}
+
+#scrivi{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.verde p{
+
+
+
+
+
+
+}
+
+#orario{
+    font-size: 10px;
+    float: right;
+}
+.verde{
+    background-color: green;
+    width: 12%;
+    padding: 10px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    border-radius: 15px;
+}
+
+.verde-2{
+    background-color: green;
+    width: 12%;
+    padding: 10px;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+    border-radius: 15px;
+}
+
+.bianco{
+    background-color: white;
+    width: 12%;
+    padding: 10px;
+    position: absolute;
+    left: 40px;
+    top: 160px;
+    border-radius: 15px;
+}
