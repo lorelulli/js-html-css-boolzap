@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b125f3be7d.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title>boolzapp</title>
     </head>
     <body>
@@ -53,7 +54,7 @@
                                 <div class="input-container">
 
                                     <i id="search"class="fas fa-search"></i>
-                                    <input type="search" name="" value="" placeholder="Cerca o inizia una nuova chat">
+                                    <input class="ricerca-contatti" type="search" name="" value="" placeholder="Cerca o inizia una nuova chat">
 
 
                                 </div>
@@ -367,7 +368,8 @@
 
                             </div>
                             <div class="micro">
-                                <i class="fas fa-microphone"></i>
+                                <button id="pulsante" type="button" name="button"><i class="fas fa-microphone"></i></button>
+
 
                             </div>
 
@@ -381,7 +383,39 @@
 
             </div>
 
+            <div class="template">
+
+                <div class="color">
+
+                    <div class="verde">
+
+                        <div class="">
+                            <p class ='testo-input'>Io bene!</p>
+                            <p id="orario">12.44</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="color-b">
+
+                    <div class="bianco">
+                        <p>ok!</p>
+                        <p id="orario">12.50</p>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
         </div>
+
+        <script src="js/script.js" charset="utf-8"></script>
 
     </body>
 </html>
