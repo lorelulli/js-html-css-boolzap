@@ -20,9 +20,11 @@ p{
 }
 
 .container{
-    max-width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-color:;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .up{
@@ -55,6 +57,7 @@ p{
 .right{
     width: 70%;
     min-width: 400px;
+
     height: 90vh;
     background-color: blue;
 }
@@ -311,4 +314,24 @@ i {
 
 i{
     color: #919191;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-b{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-left{
+        
+        height: calc(100vh - 70px);
+    }
+
+    .main-right{
+        height: calc(100vh - 140px) ;
+    }
 }
