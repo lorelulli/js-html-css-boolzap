@@ -20,8 +20,7 @@ p{
 }
 
 .container{
-    width: 100vw;
-    height: 100vh;
+
     display: flex;
     flex-direction: column;
 
@@ -29,10 +28,12 @@ p{
 
 .up{
     height: 20vh;
+    width: 100vw;
     background-color: #1C8B82;
 }
 .down{
     height: 80vh;
+    width: 100vw;
     background-color: #E1E9EB;
 }
 
@@ -282,13 +283,13 @@ button{
 .color{
     display: flex;
     justify-content: flex-end;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 50px 10px 10px;
 }
 
 .color-b{
     display: flex;
     justify-content: flex-start;
-    padding: 10px 10px 10px 30px;
+    padding: 10px 10px 10px 50px;
 }
 
 #orario{
@@ -301,6 +302,7 @@ button{
 
 
     padding: 10px;
+
 
     border-radius: 15px;
 }
@@ -323,14 +325,25 @@ i{
     color: #919191;
 }
 
+.template{
+    display: none;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .container-b{
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         margin: 0;
+    }
+
+    .left{
+        height: 100%;
+    }
+
+    .right{
+        height: 100%;
     }
 
     .main-left{
@@ -343,7 +356,22 @@ i{
     }
 }
 
+@media screen and (max-width: 550px){
+    .container-b{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+    }
 
-.template{
-    display: none;
+    .left{
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .right{
+        display: none;
+    }
 }
