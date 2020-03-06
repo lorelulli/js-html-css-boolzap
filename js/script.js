@@ -1,5 +1,8 @@
 $(document).ready(function () {
-    $('#pulsante').click(function () {
+    $('#send').click(function () {
+
+        $('.micro').show();
+        $('.send').hide();
         var nomeImput = $('#scrivi').val();
         $('#scrivi').val('');
         console.log(nomeImput);
@@ -31,5 +34,24 @@ $(document).ready(function () {
         })
 
     })
+
+    $('#scrivi').keyup(function (event) {
+
+        /*var letteraBis = $(this).val();
+        console.log(letteraBis);
+        var lunghezzaParola = letteraBis.length();
+        if (lunghezzaParola > 0) {*/
+            $('.micro').hide();
+            $('.send').show();
+
+        /*}
+        else {
+            $('#pulsante').show();
+            $('send').hide();
+        }*/
+
+    })
+
+
 
 })
