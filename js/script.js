@@ -44,6 +44,15 @@ $(document).ready(function () {
             $('.micro').hide();
             $('.send').show();
 
+            if($('#scrivi').val() === ('')){
+                $('.micro').show();
+                $('.send').hide();
+            }
+
+            if (event.keyCode === 13) {
+                $("#send").click();
+            }
+
         /*}
         else {
             $('#pulsante').show();
@@ -51,6 +60,45 @@ $(document).ready(function () {
         }*/
 
     })
+
+
+    $('.scheda').click(function () {
+
+
+        var utente = $(this).data('codice');
+
+        $('.schedabis').each(function () {
+
+            if( utente == $(this).data('codice') ){
+
+                $('.schedabis').addClass('hide');
+                $('.schedabis').removeClass('flex');
+                $(this).removeClass('hide');
+                $(this).addClass('flex');
+
+            }
+
+
+        })
+
+        $('.main-right').each(function () {
+
+            if( utente == $(this).data('codice') ){
+
+                $('.main-right').addClass('hide');
+                
+                $(this).removeClass('hide');
+
+
+            }
+
+
+        })
+
+
+    })
+
+
 
 
 
