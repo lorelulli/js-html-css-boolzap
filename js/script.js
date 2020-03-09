@@ -86,7 +86,7 @@ $(document).ready(function () {
             if( utente == $(this).data('codice') ){
 
                 $('.main-right').addClass('hide');
-                
+
                 $(this).removeClass('hide');
 
 
@@ -97,6 +97,36 @@ $(document).ready(function () {
 
 
     })
+
+
+
+    $('.verde').click(function () {
+
+        var tendina = $('.template .tendina').clone();
+        $('.tendina').hide();
+        $(this).append(tendina);
+        $(this).find('.tendina').show()
+
+
+
+    })
+    $('.bianco').click(function () {
+
+        var tendina = $('.template .tendina').clone();
+        $('.tendina').hide();
+        $(this).append(tendina);
+        $(this).find('.tendina').show()
+
+
+
+    })
+
+
+        
+
+
+
+
 
 
 

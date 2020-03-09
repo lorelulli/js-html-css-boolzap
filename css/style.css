@@ -297,18 +297,21 @@ button{
     display: flex;
     justify-content: flex-end;
     padding: 10px 50px 10px 10px;
+    position: relative;
 }
 
 .color-b{
     display: flex;
     justify-content: flex-start;
     padding: 10px 10px 10px 50px;
+    position: relative;
 }
 
 #orario{
     font-size: 8px;
     float: right;
     padding-top: 3px;
+    transform: translateX(15px);
 }
 .verde{
     background-color: #DCF8C6;
@@ -316,8 +319,9 @@ button{
 
     padding: 10px;
 
-
+    position: relative;
     border-radius: 15px;
+    padding-right: 25px;
 }
 
 
@@ -326,8 +330,9 @@ button{
     background-color: white;
 
     padding: 10px;
-
+    position: relative;
     border-radius: 15px;
+    padding-right: 25px;
 }
 
 .verde p,.bianco p{
@@ -348,6 +353,22 @@ i{
 }
 .flex{
     display: flex;
+}
+
+.tendina{
+width: 140px;
+height: 80px;
+background-color: white;
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 35px;
+right: 5px;
+padding: 10px;
+text-align: center;
+justify-content: space-around;
+z-index: 1
+
 }
 
 @media screen and (max-width: 850px) {
