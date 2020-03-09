@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $('#send').click(function () {
 
         $('.micro').show();
@@ -98,23 +99,16 @@ $(document).ready(function () {
 
     })
 
-    $(document.body).click( function(e) {
-        $('.tendina').hide();
-    });
-
-    $(".verde").click( function(e) {
-        e.stopPropagation(); // this stops the event from bubbling up to the body
-    });
-    $(".bianco").click( function(e) {
-        e.stopPropagation(); // this stops the event from bubbling up to the body
-    });
 
 
-    $('.chevron').click(function(f) {
+
+
+    $(document).on('click', '.chevron', function() {
 
         if ($(this).parent().find('.tendina').is(':visible')) {
 
             $(this).parent().find('.tendina').hide();
+
 
 
         }
@@ -123,19 +117,16 @@ $(document).ready(function () {
             $('.tendina').hide();
             $(this).parent().append(tendina);
             $(this).parent().find('.tendina').show()
+            $('.overlay').show();
 
         }
 
     })
 
 
-
-
-    $('#delete').click(function () {
-        $(this).hide();
-
-
-
+    $(document).on('click', '.overlay', function() {
+        $('.tendina').hide();
+        $('.overlay').hide();
     })
 
 
@@ -144,6 +135,15 @@ $(document).ready(function () {
 
 
 
+
+
+    $(document).on('click', '.delete', function() {
+        console.log('ciao');
+
+        $(this).parent().parent().parent().hide();
+
+
+    });
 
 
 
