@@ -98,31 +98,49 @@ $(document).ready(function () {
 
     })
 
-
-
-    $('.verde').click(function () {
-
-        var tendina = $('.template .tendina').clone();
+    $(document.body).click( function(e) {
         $('.tendina').hide();
-        $(this).append(tendina);
-        $(this).find('.tendina').show()
+    });
+
+    $(".verde").click( function(e) {
+        e.stopPropagation(); // this stops the event from bubbling up to the body
+    });
+    $(".bianco").click( function(e) {
+        e.stopPropagation(); // this stops the event from bubbling up to the body
+    });
+
+
+    $('.chevron').click(function(f) {
+
+        if ($(this).parent().find('.tendina').is(':visible')) {
+
+            $(this).parent().find('.tendina').hide();
+
+
+        }
+        else {
+            var tendina = $('.template .tendina').clone();
+            $('.tendina').hide();
+            $(this).parent().append(tendina);
+            $(this).parent().find('.tendina').show()
+
+        }
+
+    })
+
+
+
+
+    $('#delete').click(function () {
+        $(this).hide();
 
 
 
     })
-    $('.bianco').click(function () {
-
-        var tendina = $('.template .tendina').clone();
-        $('.tendina').hide();
-        $(this).append(tendina);
-        $(this).find('.tendina').show()
 
 
 
-    })
 
-
-        
 
 
 

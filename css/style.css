@@ -371,6 +371,31 @@ z-index: 1
 
 }
 
+.tendina p{
+    cursor: pointer;
+}
+
+
+
+.chevron i{
+    font-size: 10px;
+
+}
+
+.chevron{
+
+    color: black;
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+}
+
+.chevron:hover{
+
+}
+
 @media screen and (max-width: 850px) {
     .container-b{
         position: absolute;
