@@ -141,6 +141,8 @@ $(document).ready(function () {
         console.log('ciao');
 
         $(this).parent().parent().parent().hide();
+        $('.overlay').hide();
+
 
 
     });
