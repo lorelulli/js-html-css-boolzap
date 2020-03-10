@@ -116,6 +116,7 @@ i {
 .n-text{
     padding: 5px;
     padding-left: 15px;
+    padding-right: 20px;
 }
 
 .n-text h3 , a{
@@ -166,6 +167,7 @@ i {
     justify-content: space-between;
     background-color: white;
     border-bottom: solid 1px #f2f2f2;
+    cursor: pointer;
 
 
 }
@@ -324,7 +326,7 @@ button{
     position: relative;
     border-radius: 15px;
     padding-right: 25px;
-    
+
 }
 
 
@@ -394,6 +396,7 @@ z-index: 5;
     top: 2px;
     right: 2px;
     display: none;
+    cursor: pointer;
 
 }
 
