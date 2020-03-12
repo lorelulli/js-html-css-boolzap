@@ -5,7 +5,9 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b125f3be7d.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" charset="utf-8"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
         <title>boolzapp</title>
     </head>
     <body>
@@ -915,14 +917,15 @@
 
             </div>
 
-            <div class="template">
 
-                <div class="color">
+            <script id="messaggio-template" type="text/x-handlebars-template">
 
-                    <div class="verde">
+                <div class="{{prima}}">
+
+                    <div class="{{seconda}}">
 
                         <div class="">
-                            <p class ='testo-input'>Io bene!</p>
+                            <p class ='teso-input'>{{testo}}</p>
                             <p id="orario">12.44</p>
 
                             <div class="chevron">
@@ -937,20 +940,15 @@
 
                 </div>
 
-                <div class="color-b">
 
-                    <div class="bianco">
-                        <p>ok!</p>
-                        <p id="orario">12.50</p>
 
-                        <div class="chevron">
-                            <i class="fas fa-chevron-down"></i>
 
-                        </div>
 
-                    </div>
+            </script>
 
-                </div>
+            <div class="template">
+
+
 
                 <div class="tendina">
                     <p> Message info</p>

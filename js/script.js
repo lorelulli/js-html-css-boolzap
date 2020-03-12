@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+    var source = $('#messaggio-template').html();              // clono il template messaggio
+    var template = Handlebars.compile(source);
+
+    function creaMsg(prima, seconda, testoMsg) {
+        var datiMessaggio = {                                 // Assemblo in un oggetto il contenuto del messaggio
+            prima: prima,
+            seconda: seconda,
+            testo: testoMsg
+        };
+
+        var templateMessaggio = template(datiMessaggio);      // Popolo il template di handlebars con il contenuto del messaggio
+        $('.main-right').append(templateMessaggio);// faccio l'append del template così popolato
+    }
+
+
     $('#send').click(function () {
 
         $('.micro').show();
@@ -8,13 +23,10 @@ $(document).ready(function () {
         $('#scrivi').val('');
         console.log(nomeImput);
 
-        var messaggio = $('.template .color').clone();
-        messaggio.find('.testo-input').text(nomeImput);
-        $('.main-right').append(messaggio);
+        creaMsg('color', 'verde', nomeImput)
 
         setTimeout(function () {
-            var messaggioBis = $('.template .color-b').clone();
-            $('.main-right').append(messaggioBis);
+            creaMsg('color-b', 'bianco', 'ok')
         }, 1000);
 
 
@@ -146,6 +158,8 @@ $(document).ready(function () {
 
 
     });
+
+
 
 
 
